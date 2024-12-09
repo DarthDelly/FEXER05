@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void conMeters(float num){
+ float meters, feet, inch, centi;
+  meters = num * 0.9144;
+  feet = meters * 3.28084;
+  inch = feet * 12;
+  centi = inch * 2.54;
+ 
+ printf("\nConvert Yards to Meters: %f", meters);
+ printf("\nConvert Meters to Feet: %f", feet);
+ printf("\nConvert Feet to Inches: %f", inch);
+ printf("\nConvert Inches to Centimeters: %f", centi);
+}
+
+int main(){
+ float number;
+   printf("Input a number in Length: ");
+    scanf("%f", &number);
+	 
+ conMeters(number);
+ 
+return 0;
+}
+
+
